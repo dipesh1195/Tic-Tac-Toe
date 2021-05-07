@@ -23,8 +23,22 @@ namespace Tic_Tac_Toe
 
         }
         Boolean turn = false;
-        
 
+        private void newgame_click(object sender, EventArgs e)
+        {
+           
+            new Form2(plr1,plr2).Show();
+           
+        }
+        private void Exit_click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void About_click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Created By Dipesh Kushwaha");
+
+        }
 
         private void button_click(object sender, EventArgs e)
         {

@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Tic_Tac_Toe
 {
     partial class Form2
@@ -198,18 +200,21 @@ namespace Tic_Tac_Toe
             this.newgame.Name = "newgame";
             this.newgame.Size = new System.Drawing.Size(169, 26);
             this.newgame.Text = "New Game";
+            this.newgame.Click += new System.EventHandler(this.newgame_click);
             // 
             // Exit
             // 
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(169, 26);
             this.Exit.Text = "Exit";
+            this.Exit.Click += new System.EventHandler(this.Exit_click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(67, 24);
             this.toolStripMenuItem2.Text = "About";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.About_click);
             // 
             // Form2
             // 
@@ -238,6 +243,8 @@ namespace Tic_Tac_Toe
 
         }
 
+        
+
         #endregion
 
         private System.Windows.Forms.Button button1;
@@ -256,5 +263,7 @@ namespace Tic_Tac_Toe
         private System.Windows.Forms.ToolStripMenuItem newgame;
         private System.Windows.Forms.ToolStripMenuItem Exit;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+
+        
     }
 }
