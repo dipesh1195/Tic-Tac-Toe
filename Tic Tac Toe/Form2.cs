@@ -26,7 +26,7 @@ namespace Tic_Tac_Toe
 
         private void newgame_click(object sender, EventArgs e)
         {
-
+            turn = false;
             foreach (Control c in Controls)
             {
                 if (c.GetType() == typeof(Button))
