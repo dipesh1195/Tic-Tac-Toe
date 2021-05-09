@@ -26,9 +26,17 @@ namespace Tic_Tac_Toe
 
         private void newgame_click(object sender, EventArgs e)
         {
-           
-            new Form2(plr1,plr2).Show();
-           
+
+            foreach (Control c in Controls)
+            {
+                if (c.GetType() == typeof(Button))
+                {
+                    Button b = (Button)c;
+                    b.Text = "";
+                    b.Enabled = true;
+                }
+                //new Form2(plr1,plr2).Show();
+            }
         }
         private void Exit_click(object sender, EventArgs e)
         {
